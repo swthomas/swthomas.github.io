@@ -1,1 +1,105 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background-color:lightgrey">
+
+    <h1><center><b>Hello World</b></center></h1>
+<p>
+------------------------------------------------------------------------------------
+</p>
+<h2>Math.random()</h2>
+<p>-------------</p>
+<p>
+To generate a random number you use ‘Math.random()’. What is ‘Math’? What is the
+return type of the ‘.random()’ method. Why is the ‘M’ in ‘Math’ capitalized (you may
+need to investigate Static classes...hint hint).
+
+‘Math.’ is a class of the java language that contains “methods for performing basic
+numeric operations such as the elementary exponential, logarithm, square root, and
+trigonometric functions.” The .random() method is a method in the ‘Math’ class that
+will return “a double value with a positive sign, greater than or equal to 0.0 and
+less than 1.0. Returned values are chosen pseudorandomly with (approximately) uniform
+distribution from that range.” The ‘M’ in ‘Math’ is capitalized because it is a
+top-level static class in the java language and the code will not run unless it is
+written correctly. It is programming convention to capitalize the first letter of a
+class. This is due to readability and conformity, this readability and conformity in
+programing helps programmers create code that is easier to work with.</p>
+<p>
+------------------------------------------------------------------------------------
+</p>
+<h2>Casting a double to an int</h2>
+<p>--------------------------</p>
+<p>What does it mean to ‘cast a double to an int’? Give an example of when you would do
+this and explain what is happening.
+
+When you ‘cast a double to an int’ you are converting a variable that used to be a
+double into an int. Essentially you are deleting the remainder of a number and
+creating a whole number. If you were to cast the double 10.345, to an int you would
+end up with 10. You removed the .345 of the double because an int cannot have a
+decimal. A programmer might want to cast a double to an int if they were using the
+Math.random() method but wanted a whole number (an int). The .random() method will
+return a random number between 0.0 and 1.0. The programmer would then multiply the
+random number by a  whole number and finally cast that result to a int, resulting
+in a random whole number.</p>
+<p>
+------------------------------------------------------------------------------------
+</p>
+<h2>Switch if/else</h2>
+<p>--------------</p>
+<p>What is the difference between ‘switch’ and ‘if/else’? When would you use one versus
+the other?</p>
+<p>
+As described by Oracle “the statements inside your source files are generally executed
+from top to bottom, in the order that they appear. Control flow statements, however,
+break up the flow of execution by employing decision making, looping, and branching,
+enabling your program to conditionally execute particular blocks of code.”  Both the
+switch and if/else statements are control flow statements, but vary in how they execute
+command and their possible outcomes. The ‘if/else’ statement is restrained to a two
+prong execution path. (If something is true this will happen, if not that will happen.)
+The switch statement differs in that it can have a number of different possible execution
+paths. The switch statement contains different ‘cases’ and the program will look to see
+if a given variable is equal to one or more of the ‘cases’. If the given variable is equal
+to one of the cases the program will run the code within that case. The ‘switch’ statement
+allows a programmer to clean up the code, making it more readable removing numerous stacked
+if/else statement. Each has their benefit and every programmer is different in their use of
+the if/else and switch statements, some programmers only use the if/else statement while
+others swear by the switch statement. </p>
+<p>
+------------------------------------------------------------------------------------
+</p>
+<h2>java.util.Scanner</h2>
+<p>-----------------</p>
+<p>What happens when you include ‘import java.util.Scanner;’ in your code? Where does
+this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?
+
+There are 15 core packages in the java language. When a programmer wants to call up
+these packages they first need to call the java language followed with the package,
+(language.package or i.e. java.util). Within each package there are an assortment of
+classes. These class contain all different types of functionalities that make the java
+language what it is. The "java.util package contains the collections framework, legacy
+collection classes, event model, date and time facilities, internationalization, and
+miscellaneous utility classes." One of these such classes is the Scanner class. The
+Scanner class is a simple text scanner which can parse primitive types and strings
+using regular expressions, reading imput from the user. Using the whole import string
+at the beginning of the code allows the programer to use some short hand code later
+instead of writing out the entire code every time the scanner is used.
+
+------------------------------------------------------------------------------------
+</p>
+<h2>'void' vs a return</h2>
+<p>-----------------------</p>
+<p>
+What is ‘void’ in a method declaration? How does this differ from declaring a method
+with a return type?
+
+As described by Oracle "a java method is a collection of statements that are grouped
+together to perform an operation." At A basic description there are two types
+of methods, one that returns a value or one that doesn't. The void declaration declares
+that there is no return type and nothing is returned to the orignial code. On the other
+hand there are many different return types that can be used that will return something
+to the original code and can be used further within that orignial code.
+</p>  </body>
+</html>
